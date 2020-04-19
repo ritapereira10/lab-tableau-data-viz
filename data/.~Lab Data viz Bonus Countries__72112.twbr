@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook source-build='2020.1.2 (20201.20.0326.1623)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='countries-of-the-world' inline='true' name='federated.0x3i46h1wisoy41fqmgvw0y5gy1s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='countries-of-the-world' name='textscan.0vr0k5z0aktxlk1b4iewi1j30tcn'>
+            <connection class='textscan' directory='/Users/ritasousabritopereira/Documents/ironhack/lab-tableau-data-viz/data' filename='countries-of-the-world.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0vr0k5z0aktxlk1b4iewi1j30tcn' name='countries-of-the-world.csv' table='[countries-of-the-world#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='integer' name='Population' ordinal='2' />
+            <column datatype='integer' name='Area (sq. mi.)' ordinal='3' />
+            <column datatype='string' name='Pop. Density (per sq. mi.)' ordinal='4' />
+            <column datatype='string' name='Coastline (coast/area ratio)' ordinal='5' />
+            <column datatype='string' name='Net migration' ordinal='6' />
+            <column datatype='string' name='Infant mortality (per 1000 births)' ordinal='7' />
+            <column datatype='integer' name='GDP ($ per capita)' ordinal='8' />
+            <column datatype='string' name='Literacy (%)' ordinal='9' />
+            <column datatype='string' name='Phones (per 1000)' ordinal='10' />
+            <column datatype='string' name='Arable (%)' ordinal='11' />
+            <column datatype='string' name='Crops (%)' ordinal='12' />
+            <column datatype='string' name='Other (%)' ordinal='13' />
+            <column datatype='integer' name='Climate' ordinal='14' />
+            <column datatype='string' name='Birthrate' ordinal='15' />
+            <column datatype='string' name='Deathrate' ordinal='16' />
+            <column datatype='string' name='Agriculture' ordinal='17' />
+            <column datatype='string' name='Industry' ordinal='18' />
+            <column datatype='string' name='Service' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area (sq. mi.)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Area (sq. mi.)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Area (sq. mi.)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pop. Density (per sq. mi.)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pop. Density (per sq. mi.)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Pop. Density (per sq. mi.)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coastline (coast/area ratio)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Coastline (coast/area ratio)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Coastline (coast/area ratio)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net migration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Net migration]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Net migration</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Infant mortality (per 1000 births)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Infant mortality (per 1000 births)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Infant mortality (per 1000 births)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GDP ($ per capita)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GDP ($ per capita)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>GDP ($ per capita)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Literacy (%)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Literacy (%)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Literacy (%)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phones (per 1000)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Phones (per 1000)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Phones (per 1000)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arable (%)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Arable (%)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Arable (%)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crops (%)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crops (%)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Crops (%)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other (%)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other (%)]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Other (%)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Climate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Climate]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Climate</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birthrate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Birthrate]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Birthrate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deathrate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Deathrate]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Deathrate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Agriculture</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Agriculture]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Agriculture</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Industry]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Service</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Service]</local-name>
+            <parent-name>[countries-of-the-world.csv]</parent-name>
+            <remote-alias>Service</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='CountD' caption='pop. Density (per sq mi) 2' datatype='real' datatype-customized='true' name='[Calculation_5074430922107801601]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([Pop. Density (per sq. mi.)],&apos;,&apos;,&apos;.&apos;))' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Pop. Density (per sq. mi.)]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.665493' measure-ordering='alphabetic' measure-percentage='0.334507' show-aliased-fields='true' show-structure='true' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='density'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>World Population Density by Country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='countries-of-the-world' name='federated.0x3i46h1wisoy41fqmgvw0y5gy1s' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0x3i46h1wisoy41fqmgvw0y5gy1s'>
+            <column aggregation='CountD' caption='pop. Density (per sq mi) 2' datatype='real' datatype-customized='true' name='[Calculation_5074430922107801601]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([Pop. Density (per sq. mi.)],&apos;,&apos;,&apos;.&apos;))' />
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Pop. Density (per sq. mi.)]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_5074430922107801601]' derivation='None' name='[none:Calculation_5074430922107801601:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[none:Calculation_5074430922107801601:qk]' max='50.0' min='0.0' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[none:Calculation_5074430922107801601:qk]' />
+              <lod column='[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[none:Country:nk]' />
+              <geometry column='[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='206' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[Latitude (generated)]</rows>
+        <cols>[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{5E0EB324-421D-4439-992D-DAC5045F84A7}' />
+    </worksheet>
+    <worksheet name='gdp'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>World GDP per capita</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='countries-of-the-world' name='federated.0x3i46h1wisoy41fqmgvw0y5gy1s' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0x3i46h1wisoy41fqmgvw0y5gy1s'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[GDP ($ per capita)]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GDP ($ per capita)]' derivation='Sum' name='[sum:GDP ($ per capita):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[sum:GDP ($ per capita):qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[none:Country:nk]' />
+              <color column='[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[sum:GDP ($ per capita):qk]' />
+              <geometry column='[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[Latitude (generated)]</rows>
+        <cols>[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8404998F-E655-4BCA-B858-3B7E159422A4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97648' id='8' param='horz' type='layout-flow' w='98196' x='902' y='1176'>
+            <zone h='97648' id='6' type='layout-basic' w='98196' x='902' y='1176'>
+              <zone h='48824' id='3' name='gdp' w='98196' x='902' y='1176'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48824' id='5' name='density' w='98196' x='902' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{04A3289A-A0E2-4CD0-9288-2186C2AA2321}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='gdp'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{837386C3-C7AE-4573-9F79-41D743922741}' />
+    </window>
+    <window class='worksheet' name='density'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0x3i46h1wisoy41fqmgvw0y5gy1s].[none:Calculation_5074430922107801601:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{326D60AD-5BBB-457A-B323-14C63D24F5DE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='density'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='gdp'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{122CDF2F-6BFA-4EA8-A5D8-4D02D365810D}' />
+    </window>
+  </windows>
+</workbook>

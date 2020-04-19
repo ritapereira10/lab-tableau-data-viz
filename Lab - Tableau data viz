@@ -1,0 +1,13 @@
+Lab - Tableau data viz 
+
+3) However, this visualization is still not "number of games played per year". Why? How to fix the issue?
+
+That is because the number of records is counting in double since there are two rows for each game (two teams).
+
+
+5) Considering the total number of games, do you think this advantage is significant? Considering that the total number of games is 2046 over the years I'd say this difference is significant
+
+7) Finally, sort your visualization by Average Completion Percentage. Which team in 2016 had the highest percent of pass completions?
+ 	- Washington Redskins
+
+ 
